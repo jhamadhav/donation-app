@@ -1,0 +1,16 @@
+{
+  "name": "donation-app",
+  "version": "1.0.0",
+  "description": "A blockchain based donation app, to make and track donation across the board. ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "contract:build": "npx truffle build",
+    "contract:deploy": "npx truffle deploy"
+  },
+  "author": "Madhav Jha",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.11"
+  }
+}
