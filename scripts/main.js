@@ -73,6 +73,9 @@ const yourDonations = () => {
 const buildCards = (data, id = "all") => {
    let appContainer = document.getElementById(id);
    let txt = "<h1>All Donations:</h1>";
+   if (id == "your") {
+      txt = "<h1>Your Donations:</h1>";
+   }
    for (let i = 0; i < data.length; ++i) {
       txt += `
         <div class="transaction-card">
