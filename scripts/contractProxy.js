@@ -44,7 +44,7 @@ class ContractProxy {
          data.amount
       );
       const receipt = await tx.wait();
-      console.log(receipt);
+      // console.log(receipt);
    }
 
    async getDonationByID(id) {

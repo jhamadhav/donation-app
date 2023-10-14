@@ -12,6 +12,7 @@ window.onload = async () => {
    }
 
    myAddress = await contractProxy.getAccount();
+   console.log(myAddress);
    myAddress = myAddress["address"];
 
    // create donation
@@ -63,7 +64,7 @@ const getDonations = async () => {
 const yourDonations = () => {
    let data = [];
    for (let i = 0; i < donations.length; ++i) {
-      if ((donations[i].address = myAddress)) {
+      if (donations[i].address == myAddress) {
          data.push(donations[i]);
       }
    }
