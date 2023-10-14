@@ -32,3 +32,55 @@
      //  to hide loader
      //  display: none;
  }
+
+ section {
+     width: 100%;
+     min-height: 90vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 70px;
+ }
+
+ #input-page {
+     form {
+         width: 80%;
+         max-width: 600px;
+     }
+
+     input {
+         outline: none;
+         border: 1px solid #efefef;
+         padding: 12px 35px;
+         font-size: large;
+         text-transform: uppercase;
+         width: 100%;
+         margin-bottom: 20px;
+
+         &:focus {
+             border-color: cornflowerblue;
+         }
+     }
+
+     button {
+         outline: none;
+         border: 2px solid #000;
+         background: none;
+         padding: 10px 25px;
+         border-radius: 20px;
+         text-transform: uppercase;
+         font-size: medium;
+         letter-spacing: 1px;
+         cursor: pointer;
+         transition-duration: 100ms;
+
+         &:hover {
+             transform: scale(1.05);
+         }
+
+         &:active {
+             transform: scale(.9);
+         }
+     }
+ }

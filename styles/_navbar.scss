@@ -147,6 +147,7 @@ nav {
     width: 44px;
     cursor: pointer;
     transition-duration: 300ms;
+    margin-left: 10px;
     margin-right: 25px;
 
     @include mobile {
