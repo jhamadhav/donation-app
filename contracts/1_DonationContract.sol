@@ -34,7 +34,7 @@ contract DonationContract {
         return donations[id];
     }
 
-    function getAllDonationID() public view returns(string[] memory){
+    function getAllDonations() public view returns(string[] memory){
         return allDonations;
     }
 }

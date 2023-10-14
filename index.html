@@ -24,6 +24,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/main.min.css">
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript" async></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/uuid-random@1.3.2/index.min.js" defer></script>
+    <script src="./scripts/contractConfig.js" defer></script>
+    <script src="./scripts/contractProxy.js" defer></script>
     <script src="./scripts/navBar.js" defer></script>
     <script src="./scripts/main.js" defer></script>
 </head>
@@ -59,13 +65,15 @@
                 <li>All Donations</li>
             </a>
             <a href="#your">
-                <li>Your Donations</li>
+                <li id="your-donation">Your Donations</li>
             </a>
         </ul>
     </nav>
 
 
     <section id="input-page">
+        <h1>Make a donation</h1>
+        <br>
         <form action="javascript:void(0);">
             <input type="number" id="input" placeholder="enter amount" autofocus="true" max="100">
             <button id="make-donation">
