@@ -4,14 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Manifest.json  -->
+    <meta property="og:title" content="Donation App">
+    <meta property="og:description"
+        content="A blockchain based donation app, to make and track donation across the board.">
+    <meta property="og:image" itemprop="image" content="./assets/logo.png">
+    <meta property="og:url" content="http://jhamadhav.com/donation-app">
+
+    <!-- Main Link Tags  -->
+    <link href="./assets/logo.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="./assets/logo.png" rel="icon" type="image/png" sizes="32x32">
+
     <title>Donation App</title>
 
     <link rel="stylesheet" href="./styles/main.min.css">
+    <script src="./scripts/navBar.js" defer></script>
     <script src="./scripts/main.js" defer></script>
 </head>
 
 <body>
-    Hello world !
+    <!-- nav bar -->
+    <nav>
+        <div class="burger" onclick="menuOpen()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <header>
+            <div class="logo">
+                <a href="http://jhamadhav.com/donation-app">
+                    <img src="./assets/logo.png" alt="app logo">
+                </a>
+            </div>
+            <div class="site-name">
+                <a href="http://jhamadhav.com/donation-app">
+                    Donation App
+                </a>
+            </div>
+        </header>
+        <ul class="nav-links">
+            <a href="#all">
+                <li>All Transactions</li>
+            </a>
+            <a href="#your">
+                <li>Your Transactions</li>
+            </a>
+        </ul>
+    </nav>
+
+
 </body>
 
 </html>
