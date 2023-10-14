@@ -1,7 +1,7 @@
 // contract creation block address details
 
 // first block address
-const contractAddress = "0x1e0900C5DdD35Ac01F088b1F090D87A0AaC66F66";
+const contractAddress = "0x208424298f9250ec43430884d62bd199c2f9bCaA";
 
 // first block abi
 const abi = [
