@@ -35,10 +35,10 @@
 
  section {
      width: 100%;
-     min-height: 90vh;
+     min-height: 30vh;
      display: flex;
      flex-direction: column;
-     justify-content: center;
+     justify-content: flex-end;
      align-items: center;
      margin-top: 70px;
  }
@@ -81,6 +81,83 @@
 
          &:active {
              transform: scale(.9);
+         }
+     }
+ }
+
+ .transactions {
+     align-items: flex-start;
+     padding-left: 80px;
+
+     @include mobile {
+         padding-left: 10px;
+     }
+
+     h1 {
+         font-family: 'Roboto', sans-serif;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         margin-bottom: 50px;
+     }
+
+     .transaction-card {
+         width: 98%;
+         max-width: 1000px;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         padding: 16px 45px;
+         border: 2px solid #000;
+         border-radius: 4px;
+         margin-bottom: 20px;
+
+         @include mobile {
+             padding: 16px 10px;
+         }
+
+         .data {
+             width: 75%;
+             padding-right: 20px;
+             border-right: 2px solid #000;
+
+             @include mobile {
+                 padding-right: 4px;
+             }
+         }
+
+         .amount {
+             width: 25%;
+             padding-left: 10px;
+             font-weight: bold;
+             font-size: x-large;
+             color: #85bb65;
+             text-align: center;
+
+             @include mobile {
+                 font-size: large;
+             }
+         }
+
+         .address {
+             width: 95%;
+             margin-bottom: 10px;
+             font-size: x-large;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+
+             @include mobile {
+                 font-size: large;
+             }
+         }
+
+         .time {
+             font-size: small;
+
+             &::before {
+                 content: "Timestamp: ";
+             }
          }
      }
  }
