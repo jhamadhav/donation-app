@@ -34,7 +34,7 @@ nav {
     background-color: $navbarBG;
     color: $navbarText;
     font-family: 'Raleway', sans-serif;
-    z-index: 100;
+    z-index: 10;
     box-shadow: $shadow;
 
     @include mobile {

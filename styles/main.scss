@@ -1,5 +1,8 @@
  @import "./navbar";
 
+
+ //  font-family: 'Montserrat', sans-serif;
+ // font-family: 'Roboto', sans-serif;
  * {
      margin: 0;
      padding: 0;
@@ -8,4 +11,24 @@
 
  body {
      background-color: #fff;
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ #loader-container {
+     position: fixed;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     text-transform: capitalize;
+     background: #efefef;
+     width: 100vw;
+     height: 100vh;
+     z-index: 100;
+     font-size: x-large;
+     letter-spacing: 2px;
+     transition-duration: 300ms;
+
+     //  to hide loader
+     //  display: none;
  }
