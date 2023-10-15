@@ -1,6 +1,10 @@
-# Donation App
+# Donation App | Blockchain Bootcamp
 
+<p align="center">
+<img src="./demo/banner.png" alt="image here" width="600px">
+<br>
 A blockchain based donation app, to make and track donations.
+</p>
 
 ## Pre-requisite:
 
