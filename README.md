@@ -118,6 +118,14 @@ You can create the frontend on your own or you can do the following.
 window.onload = async () => {
    hideLoader();
 };
+
+const showLoader = () => {
+   document.getElementById("loader-container").style.display = "flex";
+};
+
+const hideLoader = () => {
+   document.getElementById("loader-container").style.display = "none";
+};
 ```
 
 4. Now if you will open the `index.html` in browser we will have our frontend ready. 🥳
