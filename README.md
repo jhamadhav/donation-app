@@ -339,3 +339,85 @@ Now that we are done with creating the proxy, copy all the code from `main.js`, 
 ## Testing our application:
 
 1. Enter `amount` that you want to donate, and click `donate`:
+<p align="center">
+<img src="./demo/local-test-1.jpg" alt="image here" width="600px">
+</p>
+
+2. Pay `gas` to make the transaction happen:
+<p align="center">
+<img src="./demo/local-test-2.jpg" alt="image here" width="600px">
+</p>
+
+3. You can see `All Donations made`:
+<p align="center">
+<img src="./demo/local-test-3.jpg" alt="image here" width="600px">
+</p>
+
+4. You can see `All Your Donations`:
+<p align="center">
+<img src="./demo/local-test-4.jpg" alt="image here" width="600px">
+</p>
+
+With this we can made our very first `Decentralized Application (Dapp)` 🥳
+
+But this is only locally 😔, how can I show this to my friends ?
+
+So let's learn how we can deploy it to a testnet and share it with our friends.
+
+## Connecting to Polygon Mumbai Testnet:
+
+1. Similar to how we added `Ganache` local network to our `MetaMask`, we need to add `Polygon Mumbai Testnet` to our `MetaMask` wallet as well.
+2. Add the following details:
+<p align="center">
+<img src="./demo/test-net-1.jpg" alt="image here" width="600px">
+</p>
+3. We will get the `RPC` link from [Alchemy](https://www.alchemy.com/), create `app` here.
+<p align="center">
+<img src="./demo/test-net-2.jpg" alt="image here" width="600px">
+</p>
+4. Add application details
+<p align="center">
+<img src="./demo/test-net-3.jpg" alt="image here" width="600px">
+</p>
+5. Copy the `api key`, this will be our `RPC` link
+<p align="center">
+<img src="./demo/test-net-4.jpg" alt="image here" width="600px">
+</p>
+
+6. Paste this to the network settings, and we are done:
+<p align="center">
+<img src="./demo/test-net-5.jpg" alt="image here" width="600px">
+</p>
+
+7. Now you might notice, we run run into a similar problem, we have no funds 😔,so we will use the [Faucet](https://mumbaifaucet.com/) to get few `Matic` (currency used in polygon). Just enter your account address and you will receive `1 Matic`, this will be enough do host and do our testings.
+<p align="center">
+<img src="./demo/faucet.jpg" alt="image here" width="600px">
+</p>
+
+Now that we are done with setup of our `Test Net Chain`, let's deploy our contract there.
+
+## Deployment:
+
+1. Open [`Remix - Ethereum IDE`](https://remix.ethereum.org/), paste your contract there and compile it.
+
+       -  After that select `Injected Provider - MetaMask` as environment and deploy.
+       -  Copy the `Contract address`, and paste to the `contractConfig.js` that we have.
+
+   <p align="center">
+   <img src="./demo/deployment.jpg" alt="image here" width="600px">
+   </p>
+
+2. With this we have connected out `Frontend` to our `Test Net Backend`.
+
+With this we are done 🥳🥳
+
+## Conclusion:
+
+We have now acquired the knowledge to develop a fundamental blockchain-based application, conducted testing on our local blockchain network, and successfully hosted it on the Polygon Mumbai testnet. I trust you enjoyed the process as much as I did. If you have any questions or concerns, please don't hesitate to reach out to me.
+
+## My Socials:
+
+-  Mail: contact@jhamadhav.com
+-  Linkedin: [@jhamadhav](https://www.linkedin.com/in/jhamadhav)
+-  Twitter: [@jhamadhav28](https://twitter.com/jhamadhav28)
+-  Website: [jhamadhav.com](https://jhamadhav.com/)
